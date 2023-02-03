@@ -20,7 +20,8 @@
         </b-card-text>
 
         <!-- <nuxt-link> -->
-          <b-button href="#" variant="primary">Buy</b-button>
+        <b-button :to="`animal/${i+1}`" variant="info">Buy</b-button>
+        <!-- <b-button href="#" variant="primary">Buy</b-button> -->
         <!-- </nuxt-link> -->
         
     </b-card>

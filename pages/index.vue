@@ -6,13 +6,15 @@
       </form>
     </div>
 
-    <h1>{{ $t('page_1.title')}}</h1>
-    <h4>{{ $t('page_1.body')}}</h4>
-    <h4>{{ $t('page_1.footer')}}</h4>
-
+    <pre>
+      <!-- {{ items }} -->
+    </pre>
+    
+  
     <b-row>
-    <b-col cols-3 v-for="(item, i) in $t('page_1.product')" :key="i">
-        <b-card
+    <b-col cols-3 v-for="(item, i) in user.data" :key="i">
+      {{ item }}
+        <!-- <b-card
         :title="String(item.product_name)"
         :img-src="item.product_img"
         img-alt="Image"
@@ -22,12 +24,10 @@
         class="mb-2"
     >
         <b-card-text>
-            {{ item.product_id }}
+            {{ item.fullname }}
         </b-card-text>
-
         <b-button :to="`users/${i+1}`" variant="info">Buy</b-button>
-
-    </b-card>
+    </b-card> -->
     </b-col>
     </b-row>
     
@@ -39,15 +39,32 @@ export default {
   data(){
     return {
       text: '',
+      items: '',
     }
   },
-  computed: {    
-    
+  
+  async mounted() {
+    // await this.fetchUser();
+    this.items = this.user.data;
   },
+  async asyncData({ $axios }) {
+    var user = [];
+    user = await $axios.$get('http://localhost:8091/api/user/getAllUser', { headers: {'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQzNmRjMzdmZWVlZDRhZWZhMjZkMTE0ZjIwYzk1YjE2IiwidXNlcm5hbWUiOiJyb290IiwiZW1haWwiOiJraXRzYW5hcG9uZy53QG11bHRpcGx5Ynk4LmNvbSIsIm5hbWUiOiLguYHguJrguIfguITguYwiLCJyb2xlcyI6InJvb3QiLCJpYXQiOjE2NzU0MTU0NTIsImV4cCI6MTY3NTQ0Nzg1Mn0.X6wQx3OavfvVlLnbO3511NhyI5HlEcerzKP8IZOI69M'}})
+    return { user }
+  },
+  
   methods:{
     getUser(){
       this.$router.push('users/'+this.text)
-    }
+    },
+    // async fetchUser(){
+    //   try {
+    //     let temp = await this.$axios.$get('http://localhost:8091/api/user/getAllUser', { headers: {'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQzNmRjMzdmZWVlZDRhZWZhMjZkMTE0ZjIwYzk1YjE2IiwidXNlcm5hbWUiOiJyb290IiwiZW1haWwiOiJraXRzYW5hcG9uZy53QG11bHRpcGx5Ynk4LmNvbSIsIm5hbWUiOiLguYHguJrguIfguITguYwiLCJyb2xlcyI6InJvb3QiLCJpYXQiOjE2NzU0MTU0NTIsImV4cCI6MTY3NTQ0Nzg1Mn0.X6wQx3OavfvVlLnbO3511NhyI5HlEcerzKP8IZOI69M'}})
+    //     console.log(temp);
+    //   } catch (error) {
+    //     alert('data not found!')
+    //   }
+    // }
     
   },
 }

@@ -19,9 +19,8 @@
             {{ item.product_id }}
         </b-card-text>
 
-        <!-- <nuxt-link> -->
-          <b-button href="#" variant="primary">Buy</b-button>
-        <!-- </nuxt-link> -->
+        <b-button :to="`gun/${i+1}`" variant="info">Buy</b-button>
+        <!-- <b-button href="#" variant="primary">Buy</b-button> -->
 
     </b-card>
     </b-col>

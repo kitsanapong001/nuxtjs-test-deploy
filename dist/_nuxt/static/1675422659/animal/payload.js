@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/animal", {data:[{}],fetch:{},mutations:void 0});

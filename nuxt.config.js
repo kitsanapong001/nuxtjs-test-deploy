@@ -70,5 +70,13 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  // build: {},
+  build: {
+    // publicPath: 'https://shop.pastelcreative-x8.com/Assets/nuxtjs'
+  },
+
+  // router: {
+  //   base:
+  //     process.env.NODE_ENV === "development" ? process.env.BASE_URL : "/Assets/nuxtjs/"
+  // }
 }
