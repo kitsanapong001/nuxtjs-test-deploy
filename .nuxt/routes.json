@@ -1,0 +1,86 @@
+[
+  {
+    "name": "page3___th",
+    "path": "/animal",
+    "component": "/Users/kitsanapongwichakotrakun/Desktop/nuxtjs/nuxtjs-basic/pages/page3.vue",
+    "chunkName": "pages/page3",
+    "_name": "_22063120"
+  },
+  {
+    "name": "index___en",
+    "path": "/en",
+    "component": "/Users/kitsanapongwichakotrakun/Desktop/nuxtjs/nuxtjs-basic/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_e6b26c84"
+  },
+  {
+    "name": "page2___th",
+    "path": "/gun",
+    "component": "/Users/kitsanapongwichakotrakun/Desktop/nuxtjs/nuxtjs-basic/pages/page2.vue",
+    "chunkName": "pages/page2",
+    "_name": "_22226022"
+  },
+  {
+    "name": "page1___th",
+    "path": "/shoes",
+    "component": "/Users/kitsanapongwichakotrakun/Desktop/nuxtjs/nuxtjs-basic/pages/page1.vue",
+    "chunkName": "pages/page1",
+    "_name": "_223e8f24"
+  },
+  {
+    "name": "users___th",
+    "path": "/users",
+    "component": "/Users/kitsanapongwichakotrakun/Desktop/nuxtjs/nuxtjs-basic/pages/users/index.vue",
+    "chunkName": "pages/users/index",
+    "_name": "_1d076377"
+  },
+  {
+    "name": "page3___en",
+    "path": "/en/animal",
+    "component": "/Users/kitsanapongwichakotrakun/Desktop/nuxtjs/nuxtjs-basic/pages/page3.vue",
+    "chunkName": "pages/page3",
+    "_name": "_22063120"
+  },
+  {
+    "name": "page2___en",
+    "path": "/en/gun",
+    "component": "/Users/kitsanapongwichakotrakun/Desktop/nuxtjs/nuxtjs-basic/pages/page2.vue",
+    "chunkName": "pages/page2",
+    "_name": "_22226022"
+  },
+  {
+    "name": "page1___en",
+    "path": "/en/shoes",
+    "component": "/Users/kitsanapongwichakotrakun/Desktop/nuxtjs/nuxtjs-basic/pages/page1.vue",
+    "chunkName": "pages/page1",
+    "_name": "_223e8f24"
+  },
+  {
+    "name": "users___en",
+    "path": "/en/users",
+    "component": "/Users/kitsanapongwichakotrakun/Desktop/nuxtjs/nuxtjs-basic/pages/users/index.vue",
+    "chunkName": "pages/users/index",
+    "_name": "_1d076377"
+  },
+  {
+    "name": "users-id___en",
+    "path": "/en/users/:id",
+    "component": "/Users/kitsanapongwichakotrakun/Desktop/nuxtjs/nuxtjs-basic/pages/users/_id.vue",
+    "chunkName": "pages/users/_id",
+    "_name": "_399450c2"
+  },
+  {
+    "name": "users-id___th",
+    "path": "/users/:id",
+    "component": "/Users/kitsanapongwichakotrakun/Desktop/nuxtjs/nuxtjs-basic/pages/users/_id.vue",
+    "chunkName": "pages/users/_id",
+    "_name": "_399450c2"
+  },
+  {
+    "name": "index___th",
+    "path": "/",
+    "component": "/Users/kitsanapongwichakotrakun/Desktop/nuxtjs/nuxtjs-basic/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_e6b26c84"
+  }
+]
