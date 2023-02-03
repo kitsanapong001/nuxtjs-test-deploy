@@ -49,7 +49,7 @@ export default {
   },
   async asyncData({ $axios }) {
     var user = [];
-    user = await $axios.$get('http://localhost:8091/api/user/getAllUser', { headers: {'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQzNmRjMzdmZWVlZDRhZWZhMjZkMTE0ZjIwYzk1YjE2IiwidXNlcm5hbWUiOiJyb290IiwiZW1haWwiOiJraXRzYW5hcG9uZy53QG11bHRpcGx5Ynk4LmNvbSIsIm5hbWUiOiLguYHguJrguIfguITguYwiLCJyb2xlcyI6InJvb3QiLCJpYXQiOjE2NzU0MTU0NTIsImV4cCI6MTY3NTQ0Nzg1Mn0.X6wQx3OavfvVlLnbO3511NhyI5HlEcerzKP8IZOI69M'}})
+    user = await $axios.$get('http://159.223.60.29:48091/api/user/getAllUser', { headers: {'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQzNmRjMzdmZWVlZDRhZWZhMjZkMTE0ZjIwYzk1YjE2IiwidXNlcm5hbWUiOiJyb290IiwiZW1haWwiOiJraXRzYW5hcG9uZy53QG11bHRpcGx5Ynk4LmNvbSIsIm5hbWUiOiLguYHguJrguIfguITguYwiLCJyb2xlcyI6InJvb3QiLCJpYXQiOjE2NzU0MTU0NTIsImV4cCI6MTY3NTQ0Nzg1Mn0.X6wQx3OavfvVlLnbO3511NhyI5HlEcerzKP8IZOI69M'}})
     return { user }
   },
   
